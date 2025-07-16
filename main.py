@@ -199,7 +199,7 @@ async def logic(message: Message, bot: Bot):
     
     try:
         if banbot == "true":
-            if command in ["/start", "/profile", "/help"]:
+            if command in ["/profile", "/inventory", "/use"]:
                 await message.reply(f"<b>🚫 Твой аккаунт заблокирован</b>\n<i>Осталось ∞ часов до разблокировки</i>")
                 return
         
